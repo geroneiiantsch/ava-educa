@@ -1,0 +1,37 @@
+:root {
+  --tinta: #1b2a41; --suave: #5c6b80; --linha: #d9e0e8; --fundo: #f4f6f8;
+  --acento: #0e7c86; --alerta: #b4442f; --ok: #2f7d4f;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--tinta); line-height: 1.5; }
+h1 { font-size: 1.5rem; margin: 0 0 1rem; }
+
+/* Cabeçalho: nome do sistema à esquerda, usuário à direita (Flexbox) */
+.cabecalho { display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  background: var(--tinta); color: #fff; padding: .9rem 1.25rem; }
+.marca { font-size: 1.2rem; }
+
+/* Menu lateral (mobile: barra horizontal; desktop: coluna) */
+.layout { display: flex; flex-direction: column; min-height: calc(100vh - 56px); }
+.menu { display: flex; gap: .5rem; padding: .75rem; background: #fff; border-bottom: 1px solid var(--linha); overflow-x: auto; }
+.menu button { white-space: nowrap; padding: .6rem .9rem; border: 1px solid var(--linha); background: #fff;
+  border-radius: 6px; font: inherit; color: var(--tinta); cursor: pointer; }
+.menu button.ativo { background: var(--tinta); color: #fff; }
+.menu button:disabled { opacity: .45; cursor: not-allowed; }
+main { flex: 1; padding: 1.25rem; }
+
+@media (min-width: 768px) {
+  .layout { flex-direction: row; }
+  .menu { flex-direction: column; width: 230px; border-bottom: 0; border-right: 1px solid var(--linha); padding: 1rem; }
+  .menu button { text-align: left; }
+  main { padding: 2rem; }
+}
+
+/* Formulários e botões */
+label { display: grid; gap: .25rem; font-size: .9rem; color: var(--suave); }
+input, select { font: inherit; padding: .6rem; border: 1px solid #aab6c5; border-radius: 5px; color: var(--tinta); background: #fff; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid #5fd0d8; outline-offset: 1px; }
+.primario { background: var(--acento); color: #fff; border: 0; padding: .7rem 1rem; border-radius: 5px; font: inherit; font-weight: 700; cursor: pointer; }
+.feedback { color: var(--alerta); margin: 0; min-height: 1.2em; font-weight: 600; }
+.feedback.sucesso { color: var(--ok); }
