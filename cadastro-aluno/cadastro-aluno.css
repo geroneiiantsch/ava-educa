@@ -1,0 +1,9 @@
+.grade-form { display: grid; grid-template-columns: 1fr; gap: .9rem; background: #fff; padding: 1rem; border: 1px solid var(--linha); border-radius: 8px; }
+fieldset.grade-form { border: 1px solid var(--linha); margin: 0; }
+.erro { color: var(--alerta); min-height: 1em; }
+input[aria-invalid="true"], select[aria-invalid="true"] { border-color: var(--alerta); }
+/* Desktop: formulário em duas colunas (campos .largo ocupam a linha toda) */
+@media (min-width: 768px) {
+  .grade-form { grid-template-columns: 1fr 1fr; }
+  .largo { grid-column: 1 / -1; }
+}
