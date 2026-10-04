@@ -1,0 +1,6 @@
+.pagina-login { display: grid; place-items: center; min-height: 100vh; padding: 1rem; background: var(--tinta); }
+.caixa-login { background: #fff; width: min(100%, 380px); padding: 2rem; border-radius: 10px; }
+.caixa-login h1 { color: var(--tinta); margin: 0 0 .25rem; }
+.caixa-login h1 span { color: var(--acento); }
+.caixa-login form { display: grid; gap: .9rem; margin-top: 1.25rem; }
+.caixa-login a { text-align: center; color: var(--acento); }

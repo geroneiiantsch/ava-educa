@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | AVA-EDUCA+</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="pagina-login">
+  <main>
+    <section class="caixa-login">
+      <h1>AVA-EDUCA<span>+</span></h1>
+      <p>Acesse com seu e-mail institucional.</p>
+      <form id="formLogin" novalidate>
+        <label>E-mail <input type="email" id="email" autocomplete="username" required></label>
+        <label>Senha <input type="password" id="senha" autocomplete="current-password" required></label>
+        <p id="mensagem" class="feedback" role="alert"></p>
+        <button type="submit" class="primario">Entrar</button>
+        <a href="#" id="esqueci">Esqueci minha senha</a>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
