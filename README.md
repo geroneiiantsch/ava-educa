@@ -42,3 +42,9 @@ Usuários de teste:
 - Persistir os alunos cadastrados (hoje ficam apenas em memória e somem ao recarregar a página)
 - Listar e editar alunos; ativar a tela de Cursos
 - Recuperação de senha
+
+
+
+## Links
+- Trello: https://trello.com/invite/b/6ac2a2294a7e56cbdbab2d9f/ATTIdab7d9d5ffaff6193067a3f064a5f8ec9F0328D5/ava
+
