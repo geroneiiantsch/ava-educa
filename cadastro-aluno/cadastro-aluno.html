@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Alunos | AVA-EDUCA+</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="cadastro-aluno.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <strong class="marca">AVA-EDUCA+</strong>
+    <span id="nomeUsuario"></span>
+  </header>
+  <div class="layout">
+    <nav class="menu" aria-label="Menu principal">
+      <button id="btnDashboard">Dashboard</button>
+      <button id="btnCursos" disabled>Cursos</button>
+      <button id="btnCadastro" class="ativo">Cadastro de Alunos</button>
+      <button id="btnSair">Sair</button>
+    </nav>
+    <main>
+      <h1>Cadastro de alunos</h1>
+      <form id="formAluno" class="grade-form" novalidate>
+        <label class="largo">Nome completo <input id="nome" maxlength="80"><small class="erro"></small></label>
+        <label>Gênero
+          <select id="genero">
+            <option value="">Selecione</option><option>Feminino</option><option>Masculino</option>
+            <option>Outro</option><option>Prefiro não informar</option>
+          </select><small class="erro"></small>
+        </label>
+        <label>Data de nascimento <input id="dataNascimento" placeholder="DD/MM/YYYY" maxlength="10"><small class="erro"></small></label>
+        <label>CPF <input id="cpf" inputmode="numeric" maxlength="11" placeholder="Somente números"><small class="erro"></small></label>
+        <label>Telefone <input id="telefone" inputmode="numeric" maxlength="11" placeholder="DDD + número"><small class="erro"></small></label>
+        <label class="largo">E-mail <input id="email" type="email"><small class="erro"></small></label>
+
+        <fieldset class="largo grade-form">
+          <legend>Endereço</legend>
+          <label>CEP <input id="cep" inputmode="numeric" maxlength="8" placeholder="Somente números"><small class="erro"></small></label>
+          <label>Cidade <input id="cidade"><small class="erro"></small></label>
+          <label>Estado <input id="estado" maxlength="2" placeholder="UF"><small class="erro"></small></label>
+          <label class="largo">Logradouro <input id="logradouro"><small class="erro"></small></label>
+          <label>Número <input id="numero" inputmode="numeric"><small class="erro"></small></label>
+          <label>Complemento (opcional) <input id="complemento"><small class="erro"></small></label>
+          <label>Bairro <input id="bairro"><small class="erro"></small></label>
+        </fieldset>
+
+        <p id="retorno" class="feedback largo" role="alert"></p>
+        <button type="submit" class="primario">Salvar</button>
+      </form>
+    </main>
+  </div>
+  <!-- Biblioteca moment (via CDN) para validar a data de nascimento -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script type="module" src="cadastro-aluno.js"></script>
+</body>
+</html>
