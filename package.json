@@ -1,0 +1,6 @@
+{
+  "name": "ava-educa",
+  "version": "1.0.0",
+  "description": "AVA-EDUCA+ - protótipo de plataforma para a equipe pedagógica (HTML, CSS e JavaScript puro)",
+  "type": "module"
+}
