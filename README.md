@@ -28,7 +28,7 @@ ava-educa/
 ## Como executar
 Como o projeto usa módulos ES, o navegador não os carrega ao abrir o arquivo direto (`file://`). Sirva a pasta com um servidor estático local:
 1. **VS Code:** instale a extensão *Live Server*, clique com o botão direito em `index.html` e escolha *Open with Live Server*; ou
-2. **Terminal:** dentro da pasta, rode `python -m http.server 5500` e acesse `http://localhost:5500`.
+   
 
 Usuários de teste:
 
