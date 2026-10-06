@@ -48,3 +48,4 @@ Usuários de teste:
 ## Links
 - Trello: https://trello.com/invite/b/6ac2a2294a7e56cbdbab2d9f/ATTIdab7d9d5ffaff6193067a3f064a5f8ec9F0328D5/ava
 
+{Projeto final vídeo}(https://youtu.be/962fnrR-nJE?is=cDqhJXOQ1ufF-5J1)
